@@ -330,7 +330,7 @@ def render(path, verbose=False):
     d.rectangle([M, 146 * SS, W - M, 176 * SS], fill=INK)
     d.text((M + 12 * SS, 152 * SS), "SUNDAY", font=F(SANS_BOLD, 16), fill=(240, 200, 110))
     centered(d, W // 2, 150 * SS, "22 NOVEMBER 2026", F(SANS_BLACK, 21), WHITE)
-    right = "31 STORIES \u00b7 7 REGIONS"
+    right = "29 STORIES \u00b7 7 REGIONS"
     d.text((W - M - 12 * SS - d.textlength(right, font=F(SANS_BOLD, 14.5)), 154 * SS),
            right, font=F(SANS_BOLD, 14.5), fill=(240, 200, 110))
 
@@ -380,7 +380,7 @@ def render(path, verbose=False):
     # footer
     d.line([(M, 964 * SS), (W - M, 964 * SS)], fill=INK, width=2 * SS)
     centered(d, W // 2, 971 * SS, FOOTER, F(SANS_SEMI, 10.5), (110, 96, 70))
-    centered(d, W // 2, 988 * SS, "31 STORIES \u00b7 7 REGIONS \u00b7 1 PAGE \u00b7 SUNDAY 22 NOVEMBER 2026",
+    centered(d, W // 2, 988 * SS, "29 STORIES \u00b7 7 REGIONS \u00b7 1 PAGE \u00b7 SUNDAY 22 NOVEMBER 2026",
              F(SANS_BOLD, 11), INK)
 
     img = img.resize((1024, 1024), Image.LANCZOS)
